@@ -10,7 +10,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
-
   background-color: #FEFAEF !important;
   min-height: 100vh;
+}
+
+.question-footer{
+  border-top: 1px solid rgba(0, 0, 0, 0.103);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 12px;
+}
+
+.card-body{
+  width: 40em;
 }
