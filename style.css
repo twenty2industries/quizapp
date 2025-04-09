@@ -34,3 +34,7 @@
 .bg-success{
   color: white;
 }
+
+.d_none{
+  display: none;
+}
