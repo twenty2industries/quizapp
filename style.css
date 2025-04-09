@@ -29,4 +29,8 @@
 .quiz-answer-card:hover{
   cursor: pointer;
   background-color: rgba(255, 200, 0, 0.228);
+} 
+
+.bg-success{
+  color: white;
 }

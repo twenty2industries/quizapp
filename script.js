@@ -46,7 +46,7 @@ function showCurrentQuestion() {
   document.getElementById("answer_1").innerHTML = question["answer_1"];
   document.getElementById("answer_2").innerHTML = question["answer_2"];
   document.getElementById("answer_3").innerHTML = question["answer_3"];
-  document.getElementById("answer_4").innerHTML = question["answer_"];
+  document.getElementById("answer_4").innerHTML = question["answer_4"];
 }
 
 function answer(answer){
@@ -54,12 +54,16 @@ function answer(answer){
   console.log('selected answer is,', answer);
   let selectedQuestionNumber = answer.slice(-1)
   console.log(selectedQuestionNumber);
-  console.log('test', question['right_answer']);
+  console.log('current question is', question['right_answer']);
+
+  let idOfRightAnswer = `answer_${question['right_answer']}` 
 
   if (selectedQuestionNumber == question['right_answer']) {
     console.log("richtige antwort");
+    document.getElementById(answer).parentElement.classList.add('bg-success')
   } else {
-    console.log("falsch");
-    
+    document.getElementById(answer).parentElement.classList.add('bg-danger')
+    document.getElementById(idOfRightAnswer).parentElement.classList.add('bg-success')
+
   }
 }
