@@ -48,3 +48,18 @@ function showCurrentQuestion() {
   document.getElementById("answer_3").innerHTML = question["answer_3"];
   document.getElementById("answer_4").innerHTML = question["answer_"];
 }
+
+function answer(answer){
+  let question = questions[currentQuestion];
+  console.log('selected answer is,', answer);
+  let selectedQuestionNumber = answer.slice(-1)
+  console.log(selectedQuestionNumber);
+  console.log('test', question['right_answer']);
+
+  if (selectedQuestionNumber == question['right_answer']) {
+    console.log("richtige antwort");
+  } else {
+    console.log("falsch");
+    
+  }
+}
