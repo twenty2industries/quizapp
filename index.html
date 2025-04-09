@@ -18,7 +18,7 @@
     ></script>
     <title>QuizApp</title>
   </head>
-  <body>
+  <body onload="init()">
     <!-- As a heading -->
     <nav class="navbar bg-body-tertiary">
       <div class="container-fluid">
@@ -29,26 +29,26 @@
     <div id="container">
       <div class="card">
         <div class="card-body">
-          <h5 class="card-title">Card title</h5>
+          <h5 class="card-title" id="questionText">Frage</h5>
 
           <div class="card mb-2">
-            <div class="card-body">Answer</div>
+            <div class="card-body" id="answer_1">Answer</div>
           </div>
 
           <div class="card mb-2">
-            <div class="card-body">Answer</div>
+            <div class="card-body" id="answer_2">Answer</div>
           </div>
 
           <div class="card mb-2">
-            <div class="card-body">Answer</div>
+            <div class="card-body" id="answer_3">Answer</div>
           </div>
 
           <div class="card mb-2">
-            <div class="card-body">Answer</div>
+            <div class="card-body" id="answer_4">Answer</div>
           </div>
 
           <div class="question-footer">
-            <span> <b>1</b> von <b>5</b> Frage </span>
+            <span> <b id="selectedQuestions">1</b> von <b id="all-questions">5</b> Frage </span>
             <button class="btn btn-primary">Nächste Frage</button>
           </div>
 
